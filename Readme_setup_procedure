@@ -1,0 +1,22 @@
+About setup Git, the procedure refers to this link (Simplified Chinese version)
+http://ixirong.com/2014/11/19/the-way-to-learn-git/
+
+Basic steps:
+B1. Installing Git
+B2. Installing TortoiseGit
+
+Procedure to test the sample (I assume you have workable matlab)
+P1. download one case of this SampleProblems_, into your local PC, unzip to a folder, i.e. <Your_folder_sample_problem>
+P2. git-pull down the solver from url
+https://github.com/ZHAOZhengyi-tgx/m-Codes-Resource-allocation-flow-shop-job-agent
+at your local folder, create a folder called 'common', i.e. <Your_folder_m_code>\common
+
+P2. Start matlab
+P3. Add path, 
+> add_path_fsp_jsp('<Your_folder_m_code>\');
+
+
+P4. Run resalloc_gensch with input of full path to the master allocation file '*.ini', which is unzipped during the above P1.
+resalloc_gensch('<Your_folder_sample_problem>\ResAlloc_Agent4_Res3_Algo18_8899_plot=0\ResAlloc_Agent4_Res3_Algo18_plot=0.ini');
+
+Wai about 3~5 minutes, Enjoy.
